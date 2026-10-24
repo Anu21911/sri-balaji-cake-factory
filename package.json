@@ -1,0 +1,15 @@
+{
+  "name": "sri-balaji-cake-factory",
+  "version": "1.0.0",
+  "description": "Full-stack application for Sri Balaji Cake Factory (Narsapur)",
+  "private": true,
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "seed": "node backend/src/seed/seedData.js",
+    "build": "npm --prefix backend install && npm --prefix frontend install && npm --prefix frontend run build",
+    "dev:backend": "node --watch backend/src/server.js",
+    "dev:frontend": "npm --prefix frontend run dev"
+  },
+  "author": "Sri Balaji Cake Factory",
+  "license": "ISC"
+}

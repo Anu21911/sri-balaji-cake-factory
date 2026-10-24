@@ -1,0 +1,434 @@
+{
+  "users": [
+    {
+      "_id": "809b5414-d3a2-4507-8123-0d11e08dca85",
+      "name": "maale ashwini",
+      "mobile": "9963390327",
+      "email": "",
+      "passwordHash": "$2a$10$xew1t1kIC3u5qgpFRXTnYudQiqyG2FaOAcaCmGrYUuZfSjeosvbWC",
+      "role": "customer",
+      "isVerified": true,
+      "addresses": [],
+      "createdAt": "2026-10-24T19:43:46.767Z",
+      "updatedAt": "2026-10-24T19:43:46.767Z"
+    }
+  ],
+  "owners": [
+    {
+      "_id": "fed36d32-e381-451a-b9d2-75a43431188a",
+      "name": "RAKESH",
+      "mobile": "9963390327",
+      "passwordHash": "$2a$10$IKx1wBFXDOI0EoIyC.xegO33NI7BhFoAhN45W7k6K.liZz85aTRIi",
+      "role": "owner",
+      "mustChangePassword": true,
+      "createdAt": "2026-10-24T18:39:17.213Z",
+      "updatedAt": "2026-10-24T20:12:49.387Z",
+      "lastLogin": "2026-10-24T20:12:49.387Z"
+    }
+  ],
+  "products": [
+    {
+      "_id": "d5491975-cd7d-4f88-80d4-76c0929753c7",
+      "name": "Pineapple Cake",
+      "category": "cake",
+      "flavour": "Pineapple",
+      "basePrice": 280,
+      "weights": [
+        {
+          "weight": "1 kg",
+          "price": 280
+        },
+        {
+          "weight": "2 kg",
+          "price": 560
+        },
+        {
+          "weight": "3 kg",
+          "price": 840
+        }
+      ],
+      "image": "/images/products/pineapple-cake.jpg",
+      "description": "Classic handcrafted bakery sponge soaked in rich pineapple syrup, layered with fresh whipped cream and juicy tropical pineapple chunks.",
+      "stock": 50,
+      "isAvailable": true,
+      "safeUseInstructions": "Freshly baked regular cake. Best enjoyed within 24 hours. Store chilled in refrigerator.",
+      "createdAt": "2026-10-24T18:39:17.233Z",
+      "updatedAt": "2026-10-24T18:39:17.233Z"
+    },
+    {
+      "_id": "3539bc37-6968-4e0d-ac63-e7d0cc1c8afc",
+      "name": "Butterscotch Cake",
+      "category": "cake",
+      "flavour": "Butterscotch",
+      "basePrice": 280,
+      "weights": [
+        {
+          "weight": "1 kg",
+          "price": 280
+        },
+        {
+          "weight": "2 kg",
+          "price": 560
+        },
+        {
+          "weight": "3 kg",
+          "price": 840
+        }
+      ],
+      "image": "/images/products/butterscotch-cake.jpg",
+      "description": "Crispy butterscotch praline crunches layered between rich vanilla sponge and golden caramel cream drizzle.",
+      "stock": 50,
+      "isAvailable": true,
+      "safeUseInstructions": "Freshly baked regular cake. Keep in a cool dry place or refrigerate.",
+      "createdAt": "2026-10-24T18:39:17.234Z",
+      "updatedAt": "2026-10-24T18:39:17.234Z"
+    },
+    {
+      "_id": "fc5026f0-8d4c-4418-9292-e58c3806600d",
+      "name": "Chocolate Cake",
+      "category": "cake",
+      "flavour": "Chocolate",
+      "basePrice": 450,
+      "weights": [
+        {
+          "weight": "1 kg",
+          "price": 450
+        },
+        {
+          "weight": "2 kg",
+          "price": 900
+        },
+        {
+          "weight": "3 kg",
+          "price": 1350
+        }
+      ],
+      "image": "/images/products/chocolate-cake.jpg",
+      "description": "Decadent, rich dark chocolate truffle cake layered with velvety chocolate ganache and premium cocoa swirls.",
+      "stock": 50,
+      "isAvailable": true,
+      "safeUseInstructions": "Store refrigerated. Bring to room temperature 15 minutes before serving for maximum chocolate richness.",
+      "createdAt": "2026-10-24T18:39:17.236Z",
+      "updatedAt": "2026-10-24T18:39:17.236Z"
+    },
+    {
+      "_id": "fde08b7e-fb79-466f-9220-4fd0dfda8d80",
+      "name": "Vanilla Cake",
+      "category": "cake",
+      "flavour": "Vanilla",
+      "basePrice": 450,
+      "weights": [
+        {
+          "weight": "1 kg",
+          "price": 450
+        },
+        {
+          "weight": "2 kg",
+          "price": 900
+        },
+        {
+          "weight": "3 kg",
+          "price": 1350
+        }
+      ],
+      "image": "/images/products/vanilla-cake.jpg",
+      "description": "Timeless aromatic pure vanilla bean sponge finished with silk smooth vanilla butter cream and delicate piping.",
+      "stock": 50,
+      "isAvailable": true,
+      "safeUseInstructions": "Freshly baked regular cake. Chilled storage recommended.",
+      "createdAt": "2026-10-24T18:39:17.241Z",
+      "updatedAt": "2026-10-24T18:39:17.241Z"
+    },
+    {
+      "_id": "d756c9bb-9bb2-4691-a24f-5175f2873252",
+      "name": "Rasmalai Cake",
+      "category": "cake",
+      "flavour": "Rasmalai",
+      "basePrice": 700,
+      "weights": [
+        {
+          "weight": "1 kg",
+          "price": 700
+        },
+        {
+          "weight": "2 kg",
+          "price": 1400
+        },
+        {
+          "weight": "3 kg",
+          "price": 2100
+        }
+      ],
+      "image": "/images/products/rasmalai-cake.jpg",
+      "description": "Exquisite Indian fusion masterpiece infused with aromatic saffron-cardamom milk, real rasmalai pieces, sliced pistachios, and dried rose petals.",
+      "stock": 40,
+      "isAvailable": true,
+      "safeUseInstructions": "Handcrafted with fresh Indian dairy rasmalai. Keep refrigerated at all times.",
+      "createdAt": "2026-10-24T18:39:17.243Z",
+      "updatedAt": "2026-10-24T18:39:17.243Z"
+    },
+    {
+      "_id": "c5ee7a88-02fd-455f-b6cc-eaaba7bffc47",
+      "name": "Sparkles",
+      "category": "celebration",
+      "flavour": null,
+      "basePrice": 20,
+      "weights": [],
+      "variants": [],
+      "image": "/images/products/sparkles.jpg",
+      "description": "Sparkling celebration sticks to brighten cake cutting ceremonies and festive moments.",
+      "stock": 200,
+      "isAvailable": true,
+      "safeUseInstructions": "Safe Use Instructions: Hold away from eyes and flammable materials. Adult supervision required.",
+      "createdAt": "2026-10-24T18:39:17.245Z",
+      "updatedAt": "2026-10-24T18:39:17.245Z"
+    },
+    {
+      "_id": "24a5cd0f-e218-4374-bf37-befd4156cea9",
+      "name": "Snow Spray",
+      "category": "celebration",
+      "flavour": null,
+      "basePrice": 50,
+      "weights": [],
+      "variants": [],
+      "image": "/images/products/snow-spray.jpg",
+      "description": "Party snow foam spray can for joyous birthday and celebration celebrations.",
+      "stock": 150,
+      "isAvailable": true,
+      "safeUseInstructions": "Safe Use Instructions: Aerosol spray. Do not spray into eyes or near open candle flame. Ventilate room.",
+      "createdAt": "2026-10-24T18:39:17.247Z",
+      "updatedAt": "2026-10-24T18:39:17.247Z"
+    },
+    {
+      "_id": "0501b269-9d82-4c59-98d6-15fc899be768",
+      "name": "Paper Shots",
+      "category": "celebration",
+      "flavour": null,
+      "basePrice": 50,
+      "weights": [],
+      "variants": [
+        {
+          "name": "Standard Popper (₹50)",
+          "price": 50
+        },
+        {
+          "name": "Deluxe Party Cannon (₹80)",
+          "price": 80
+        }
+      ],
+      "image": "/images/products/paper-shots.jpg",
+      "description": "Colorful spring/compressed air confetti party popper streamers. Available in ₹50 standard and ₹80 deluxe sizes.",
+      "stock": 150,
+      "isAvailable": true,
+      "safeUseInstructions": "Safe Use Instructions: Point upwards towards ceiling, away from faces and people before twisting base.",
+      "createdAt": "2026-10-24T18:39:17.249Z",
+      "updatedAt": "2026-10-24T18:39:17.249Z"
+    },
+    {
+      "_id": "0de5744b-d66d-468e-8308-dcd8883fb147",
+      "name": "Shalvas (Celebration Shawl)",
+      "category": "celebration",
+      "flavour": null,
+      "basePrice": 100,
+      "weights": [],
+      "variants": [],
+      "image": "/images/products/shalvas.jpg",
+      "description": "Traditional celebration art silk felicitation shawl with zari border to honor and drape over the birthday star or VIP.",
+      "stock": 100,
+      "isAvailable": true,
+      "safeUseInstructions": "Care Instructions: Dry clean or gentle hand wash.",
+      "createdAt": "2026-10-24T18:39:17.250Z",
+      "updatedAt": "2026-10-24T18:39:17.250Z"
+    },
+    {
+      "_id": "67771e4e-2919-4797-8191-8afa86998194",
+      "name": "Gun Coils",
+      "category": "celebration",
+      "flavour": null,
+      "basePrice": 120,
+      "weights": [],
+      "variants": [],
+      "image": "/images/products/gun-coils.jpg",
+      "description": "Festive toy celebration cap gun roll ammunition coils for exciting sound celebrations.",
+      "stock": 100,
+      "isAvailable": true,
+      "safeUseInstructions": "Safe Use Instructions: Do not fire near ears or eyes. Recommended for outdoor party entertainment.",
+      "createdAt": "2026-10-24T18:39:17.253Z",
+      "updatedAt": "2026-10-24T18:39:17.253Z"
+    }
+  ],
+  "orders": [],
+  "customCakes": [],
+  "notifications": [],
+  "auditLogs": [
+    {
+      "_id": "09911de8-ceb5-4602-9f32-71a3d5bc1f48",
+      "action": "OWNER_LOGIN",
+      "entityType": "owner",
+      "entityId": "fed36d32-e381-451a-b9d2-75a43431188a",
+      "performedBy": {
+        "role": "owner",
+        "id": "fed36d32-e381-451a-b9d2-75a43431188a",
+        "name": "RAKESH"
+      },
+      "details": {
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      },
+      "createdAt": "2026-10-24T19:42:04.272Z",
+      "updatedAt": "2026-10-24T19:42:04.272Z"
+    },
+    {
+      "_id": "0bc3185a-7eb7-4e3f-84e3-2a2ecfc0e368",
+      "action": "OWNER_LOGIN",
+      "entityType": "owner",
+      "entityId": "fed36d32-e381-451a-b9d2-75a43431188a",
+      "performedBy": {
+        "role": "owner",
+        "id": "fed36d32-e381-451a-b9d2-75a43431188a",
+        "name": "RAKESH"
+      },
+      "details": {
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      },
+      "createdAt": "2026-10-24T19:42:16.162Z",
+      "updatedAt": "2026-10-24T19:42:16.162Z"
+    },
+    {
+      "_id": "210ab077-1092-45e9-9348-f395c0730008",
+      "action": "OWNER_LOGIN",
+      "entityType": "owner",
+      "entityId": "fed36d32-e381-451a-b9d2-75a43431188a",
+      "performedBy": {
+        "role": "owner",
+        "id": "fed36d32-e381-451a-b9d2-75a43431188a",
+        "name": "RAKESH"
+      },
+      "details": {
+        "ip": "::1"
+      },
+      "createdAt": "2026-10-24T19:45:32.793Z",
+      "updatedAt": "2026-10-24T19:45:32.794Z"
+    },
+    {
+      "_id": "efd26e53-ea7e-44b4-bd08-49848dda8684",
+      "action": "OWNER_LOGIN",
+      "entityType": "owner",
+      "entityId": "fed36d32-e381-451a-b9d2-75a43431188a",
+      "performedBy": {
+        "role": "owner",
+        "id": "fed36d32-e381-451a-b9d2-75a43431188a",
+        "name": "RAKESH"
+      },
+      "details": {
+        "ip": "::1"
+      },
+      "createdAt": "2026-10-24T19:53:06.775Z",
+      "updatedAt": "2026-10-24T19:53:06.775Z"
+    },
+    {
+      "_id": "7e912875-db34-4368-813e-224a388ac130",
+      "action": "OWNER_LOGIN",
+      "entityType": "owner",
+      "entityId": "fed36d32-e381-451a-b9d2-75a43431188a",
+      "performedBy": {
+        "role": "owner",
+        "id": "fed36d32-e381-451a-b9d2-75a43431188a",
+        "name": "RAKESH"
+      },
+      "details": {
+        "ip": "::1"
+      },
+      "createdAt": "2026-10-24T19:53:19.991Z",
+      "updatedAt": "2026-10-24T19:53:19.991Z"
+    },
+    {
+      "_id": "2a9ca678-dbb9-4b29-b8ac-e536e245754a",
+      "action": "OWNER_LOGIN",
+      "entityType": "owner",
+      "entityId": "fed36d32-e381-451a-b9d2-75a43431188a",
+      "performedBy": {
+        "role": "owner",
+        "id": "fed36d32-e381-451a-b9d2-75a43431188a",
+        "name": "RAKESH"
+      },
+      "details": {
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      },
+      "createdAt": "2026-10-24T19:58:00.794Z",
+      "updatedAt": "2026-10-24T19:58:00.794Z"
+    },
+    {
+      "_id": "fca3e4c6-3b3d-42c7-a13a-c6cbf3e03c2e",
+      "action": "OWNER_PASSWORD_CHANGE",
+      "entityType": "owner",
+      "entityId": "fed36d32-e381-451a-b9d2-75a43431188a",
+      "performedBy": {
+        "role": "owner",
+        "id": "fed36d32-e381-451a-b9d2-75a43431188a",
+        "name": "RAKESH"
+      },
+      "details": {
+        "message": "Owner updated password and fulfilled security policy."
+      },
+      "createdAt": "2026-10-24T19:58:45.968Z",
+      "updatedAt": "2026-10-24T19:58:45.968Z"
+    },
+    {
+      "_id": "2aa6cec3-31d4-4073-a48c-5346c772ebcb",
+      "action": "OWNER_LOGIN",
+      "entityType": "owner",
+      "entityId": "fed36d32-e381-451a-b9d2-75a43431188a",
+      "performedBy": {
+        "role": "owner",
+        "id": "fed36d32-e381-451a-b9d2-75a43431188a",
+        "name": "RAKESH"
+      },
+      "details": {
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+      },
+      "createdAt": "2026-10-24T20:03:17.922Z",
+      "updatedAt": "2026-10-24T20:03:17.922Z"
+    },
+    {
+      "_id": "308d7216-5d98-4ff5-97b8-707ee0992cad",
+      "action": "OWNER_LOGIN",
+      "entityType": "owner",
+      "entityId": "fed36d32-e381-451a-b9d2-75a43431188a",
+      "performedBy": {
+        "role": "owner",
+        "id": "fed36d32-e381-451a-b9d2-75a43431188a",
+        "name": "RAKESH"
+      },
+      "details": {
+        "ip": "::1"
+      },
+      "createdAt": "2026-10-24T20:12:49.390Z",
+      "updatedAt": "2026-10-24T20:12:49.390Z"
+    }
+  ],
+  "settings": [
+    {
+      "_id": "6677ae88-cbd3-45c2-a80d-e70a9f2cb98e",
+      "businessName": "Sri Balaji Cake Factory",
+      "tagline": "Made with Love, Delivered with Care.",
+      "subQuote": "Because your happiness matters to us more than anything.",
+      "address": "SangaReddy Road, Narsapur",
+      "phone": "9963390327",
+      "whatsapp": "919963390327",
+      "instagram": "_rakhi_0206",
+      "googleMapsQuery": "https://www.google.com/maps/search/?api=1&query=SangaReddy%20Road%2C%20Narsapur%2C%20Telangana%2C%20India",
+      "deliveryFeePerKm": 4,
+      "baseDeliveryDistanceKm": 5,
+      "businessHours": {
+        "weekdays": "9:00 AM - 10:00 PM",
+        "weekends": "9:00 AM - 10:30 PM"
+      },
+      "createdAt": "2026-10-24T18:39:17.260Z",
+      "updatedAt": "2026-10-24T18:39:17.260Z"
+    }
+  ]
+}
