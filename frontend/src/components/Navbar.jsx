@@ -28,41 +28,20 @@ export default function Navbar({
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-amber-100 shadow-xs">
       
-      {/* Top Portals Switcher Ribbon */}
-      <div className="bg-stone-900 text-stone-300 px-4 py-1.5 text-xs border-b border-stone-800">
+      {/* Top Announcement Strip (Swiggy / Food-app style) */}
+      <div className="bg-stone-950 text-stone-300 px-4 py-1.5 text-xs border-b border-stone-800">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="text-amber-400 font-bold uppercase tracking-wider text-[10px]">
-              Sri Balaji Cake Factory Portals:
+          <div className="flex items-center gap-2 text-[11px]">
+            <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="font-semibold text-stone-200">
+              Freshly Baked Regular Cakes • ₹4/km Delivery across Narsapur
             </span>
-            <div className="inline-flex rounded-lg bg-stone-800 p-0.5 border border-stone-700">
-              <button
-                onClick={() => onSwitchPortal('customer')}
-                className={`px-3 py-1 rounded-md text-[11px] font-bold transition-all ${
-                  activePortal === 'customer'
-                    ? 'bg-amber-500 text-stone-950 shadow-xs'
-                    : 'text-stone-400 hover:text-white'
-                }`}
-              >
-                🎂 1. Customer Portal
-              </button>
-              <button
-                onClick={() => onSwitchPortal('owner')}
-                className={`px-3 py-1 rounded-md text-[11px] font-bold transition-all ${
-                  activePortal === 'owner'
-                    ? 'bg-amber-500 text-stone-950 shadow-xs'
-                    : 'text-stone-400 hover:text-white'
-                }`}
-              >
-                👑 2. Owner Portal {isOwnerLoggedIn && '(Active)'}
-              </button>
-            </div>
           </div>
 
-          <div className="hidden sm:flex items-center gap-4 text-[11px] text-stone-400">
-            <span>📍 SangaReddy Road, Narsapur</span>
-            <span>•</span>
-            <a href="tel:9963390327" className="text-amber-400 hover:underline">📞 9963390327</a>
+          <div className="flex items-center gap-4 text-[11px] text-stone-400">
+            <span className="hidden sm:inline">📍 SangaReddy Road, Narsapur</span>
+            <span className="hidden sm:inline">•</span>
+            <a href="tel:9963390327" className="text-amber-400 hover:underline font-mono">📞 9963390327</a>
           </div>
         </div>
       </div>
@@ -174,19 +153,20 @@ export default function Navbar({
               </button>
             )}
 
-            {/* Owner Portal Dedicated Button */}
-            <button
-              onClick={() => onSwitchPortal('owner')}
-              className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-all shadow-xs ${
-                activePortal === 'owner'
-                  ? 'bg-amber-500 text-stone-950 ring-2 ring-amber-400'
-                  : 'bg-stone-900 text-amber-400 hover:bg-black border border-stone-800'
-              }`}
-            >
-              <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
-              <span className="hidden sm:inline">{isOwnerLoggedIn ? 'Owner Workstation' : 'Owner Portal'}</span>
-              <span className="sm:hidden">Owner</span>
-            </button>
+            {/* Owner Workstation Button — ONLY visible to authenticated Bakery Owner (Swiggy / Zomato Partner style) */}
+            {isOwnerLoggedIn && (
+              <button
+                onClick={() => onSwitchPortal(activePortal === 'owner' ? 'customer' : 'owner')}
+                className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-400 text-stone-950 transition-all shadow-xs ring-2 ring-amber-400 animate-fade-in"
+                title="Toggle between Storefront and Owner Workstation"
+              >
+                <ShieldCheck className="w-3.5 h-3.5 text-stone-950" />
+                <span className="hidden sm:inline">
+                  {activePortal === 'owner' ? '🏪 View Storefront' : '👑 Owner Workstation'}
+                </span>
+                <span className="sm:hidden">{activePortal === 'owner' ? 'Store' : 'Owner'}</span>
+              </button>
+            )}
 
           </div>
 

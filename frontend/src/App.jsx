@@ -165,6 +165,11 @@ function MainApp() {
       <CustomerAuthModal
         isOpen={isAuthModalOpen}
         onClose={() => setIsAuthModalOpen(false)}
+        onOpenOwnerLogin={() => {
+          setIsAuthModalOpen(false);
+          setActivePortal('owner');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
         onSuccess={() => {
           setIsAuthModalOpen(false);
         }}

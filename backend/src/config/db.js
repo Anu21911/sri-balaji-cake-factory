@@ -11,10 +11,14 @@ async function connectDB() {
     });
     isConnected = true;
     console.log(`[Database] Successfully connected to MongoDB at ${uri}`);
+    const { initializeDatabase } = require('../utils/initDatabase');
+    await initializeDatabase();
   } catch (err) {
     isConnected = false;
     console.warn(`[Database] MongoDB not reachable at ${uri} (${err.message}).`);
     console.log(`[Database] Seamlessly activated high-resilience local JSON store (data/db.json).`);
+    const { initializeDatabase } = require('../utils/initDatabase');
+    await initializeDatabase();
   }
 }
 

@@ -7,6 +7,7 @@ const upload = require('../middleware/upload');
 // Public Product Routes
 router.get('/', productController.getProducts);
 router.get('/:id', productController.getProductById);
+router.post('/init-catalogue', productController.initCatalogue);
 
 // Owner Product Management Routes
 router.post('/', authOwner, productController.createProduct);

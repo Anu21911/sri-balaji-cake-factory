@@ -171,3 +171,21 @@ exports.createProduct = async (req, res) => {
     res.status(500).json({ success: false, message: 'Failed to create product' });
   }
 };
+
+// Controlled Initialization: Populate approved catalogue if empty
+exports.initCatalogue = async (req, res) => {
+  try {
+    const { initializeDatabase } = require('../utils/initDatabase');
+    await initializeDatabase();
+    const products = await Product.find({});
+    res.json({
+      success: true,
+      message: 'Approved catalogue verified/initialized successfully.',
+      count: products.length,
+      products
+    });
+  } catch (err) {
+    console.error('Init catalogue error:', err);
+    res.status(500).json({ success: false, message: 'Failed to initialize catalogue' });
+  }
+};

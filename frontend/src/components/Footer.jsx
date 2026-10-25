@@ -85,8 +85,8 @@ export default function Footer({ onNavigate }) {
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => onNavigate('owner-login')} className="hover:text-amber-400 transition-colors text-xs text-stone-500">
-                    🔒 Dedicated Owner Portal
+                  <button onClick={() => onNavigate('owner-login')} className="hover:text-amber-400 transition-colors text-xs text-stone-400">
+                    🔒 Bakery Partner / Owner Login
                   </button>
                 </li>
               </ul>

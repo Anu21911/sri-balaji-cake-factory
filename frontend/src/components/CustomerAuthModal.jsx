@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useCustomerAuth } from '../context/CustomerAuthContext';
 import { User, Phone, Lock, Mail, ArrowRight, ShieldCheck, AlertCircle, X } from 'lucide-react';
 
-export default function CustomerAuthModal({ isOpen, onClose, onSuccess }) {
+export default function CustomerAuthModal({ isOpen, onClose, onSuccess, onOpenOwnerLogin }) {
   const { login, register } = useCustomerAuth();
 
   const [mode, setMode] = useState('login'); // 'login' or 'signup'
@@ -189,6 +189,20 @@ export default function CustomerAuthModal({ isOpen, onClose, onSuccess }) {
             >
               {loading ? 'Logging in...' : 'Sign In to Account'}
             </button>
+
+            {/* Subtle discreet Bakery Partner / Owner link */}
+            <div className="pt-2 text-center border-t border-stone-100">
+              <button
+                type="button"
+                onClick={() => {
+                  onClose();
+                  onOpenOwnerLogin?.();
+                }}
+                className="text-[11px] text-stone-400 hover:text-amber-600 transition-colors"
+              >
+                Bakery Partner? <span className="font-semibold underline">Owner Login →</span>
+              </button>
+            </div>
           </form>
         ) : (
           /* SIGNUP FORM */
